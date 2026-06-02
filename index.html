@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-Powered Translation Platform</title>
+<title>Digital Transformation Proposal</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -18,178 +16,179 @@ font-family:'Inter',sans-serif;
 }
 
 body{
-background:#0B0B0B;
+background:#0b0f19;
 color:white;
-overflow-x:hidden;
-}
-
-section{
-padding:120px 8%;
 }
 
 .hero{
 min-height:100vh;
 display:flex;
-align-items:center;
+flex-direction:column;
 justify-content:center;
+align-items:center;
 text-align:center;
+padding:80px 20px;
 background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
-url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80');
+linear-gradient(rgba(11,15,25,.85),rgba(11,15,25,.92)),
+url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000');
 background-size:cover;
 background-position:center;
 }
 
 .hero h1{
-font-size:72px;
+font-size:64px;
 font-weight:800;
-line-height:1.1;
-margin-bottom:25px;
-}
-
-.gold{
-color:#D4AF37;
+margin-bottom:20px;
+max-width:1000px;
 }
 
 .hero p{
 font-size:22px;
-max-width:900px;
-margin:auto;
-color:#d1d1d1;
+max-width:800px;
+color:#c8d0e0;
+line-height:1.7;
 }
 
-.badge{
-display:inline-block;
-padding:10px 22px;
-border:1px solid #D4AF37;
-border-radius:50px;
-color:#D4AF37;
-margin-bottom:25px;
+.highlight{
+color:#00D4FF;
+}
+
+.section{
+max-width:1400px;
+margin:auto;
+padding:100px 40px;
 }
 
 .section-title{
-font-size:52px;
+font-size:48px;
 font-weight:800;
-margin-bottom:20px;
-}
-
-.section-subtitle{
-font-size:20px;
-color:#b3b3b3;
-margin-bottom:70px;
+margin-bottom:60px;
+text-align:center;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
 }
 
 .card{
-background:#121212;
+background:#111827;
 border:1px solid rgba(255,255,255,.08);
-padding:35px;
 border-radius:24px;
-transition:.4s;
+padding:40px;
+transition:.3s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-border-color:#D4AF37;
-}
-
-.card h3{
-margin-bottom:15px;
-font-size:24px;
-}
-
-.card p{
-color:#bfbfbf;
-line-height:1.8;
+border-color:#00D4FF;
 }
 
 .phase{
-background:#101010;
-border:1px solid rgba(212,175,55,.25);
-padding:50px;
-border-radius:30px;
-margin-bottom:40px;
+font-size:14px;
+font-weight:700;
+letter-spacing:2px;
+color:#00D4FF;
+margin-bottom:15px;
+text-transform:uppercase;
 }
 
-.phase h2{
-font-size:42px;
+.card h3{
+font-size:34px;
 margin-bottom:15px;
 }
 
-.phase ul{
-margin-top:25px;
-padding-left:20px;
+.price{
+font-size:46px;
+font-weight:800;
+margin:20px 0;
+color:#00D4FF;
 }
 
-.phase li{
-margin-bottom:15px;
-color:#cfcfcf;
+.percent{
+display:inline-block;
+background:#00D4FF22;
+color:#00D4FF;
+padding:8px 16px;
+border-radius:999px;
+margin-bottom:25px;
+font-weight:700;
 }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
+.features{
+list-style:none;
 }
 
-.stat{
-background:#111;
-padding:35px;
-border-radius:20px;
+.features li{
+padding:14px 0;
+border-bottom:1px solid rgba(255,255,255,.06);
+font-size:18px;
+}
+
+.features li:last-child{
+border-bottom:none;
+}
+
+.total{
 text-align:center;
+margin-top:80px;
+padding:50px;
+background:#111827;
+border-radius:24px;
 }
 
-.stat h3{
-font-size:48px;
-color:#D4AF37;
-margin-bottom:10px;
+.total h2{
+font-size:52px;
+margin-bottom:15px;
 }
 
-.timeline{
+.total p{
+font-size:22px;
+color:#c8d0e0;
+}
+
+.payment{
+margin-top:80px;
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(3,1fr);
 gap:25px;
 }
 
-.timeline div{
-background:#121212;
+.payment-card{
+background:#111827;
 padding:30px;
 border-radius:20px;
 text-align:center;
 }
 
-.price{
-text-align:center;
-padding:100px 30px;
-background:linear-gradient(135deg,#111,#191919);
-border-top:1px solid rgba(255,255,255,.08);
-border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.price h2{
-font-size:70px;
-color:#D4AF37;
+.payment-card h4{
+font-size:24px;
 margin-bottom:10px;
 }
 
-.price p{
-font-size:20px;
-color:#d0d0d0;
+.payment-card span{
+font-size:40px;
+font-weight:800;
+color:#00D4FF;
 }
 
-footer{
-padding:80px 8%;
+.footer{
+padding:80px 20px;
 text-align:center;
 }
 
-footer h2{
+.footer h2{
 font-size:48px;
 margin-bottom:20px;
+}
+
+.footer p{
+font-size:22px;
+max-width:900px;
+margin:auto;
+color:#c8d0e0;
+line-height:1.8;
 }
 
 @media(max-width:768px){
@@ -202,231 +201,166 @@ font-size:42px;
 font-size:34px;
 }
 
-.stats,
-.timeline{
+.payment{
 grid-template-columns:1fr;
 }
 
+.card h3{
+font-size:28px;
 }
 
+.price{
+font-size:36px;
+}
+}
 </style>
-
 </head>
+
 <body>
 
 <section class="hero">
 
-<div>
-
-<div class="badge">
-AI-Powered Translation Platform
-</div>
-
 <h1>
-Transform Your Translation Office Into An <span class="gold">Intelligent Digital Platform</span>
+Transforming a Traditional Translation Office into an
+<span class="highlight">AI-Powered Digital Platform</span>
 </h1>
 
 <p>
-A complete AI-driven ecosystem designed to automate operations, improve customer experience, increase conversion rates, and create a competitive advantage in the Saudi market.
+Reduce operational workload, accelerate delivery, improve conversion rates,
+and create a customer experience that stands out in the Saudi market.
 </p>
-
-</div>
 
 </section>
 
-<section>
+<section class="section">
 
 <h2 class="section-title">
-Current Market Challenges
+Project Roadmap & Investment
 </h2>
-
-<p class="section-subtitle">
-Traditional translation offices face operational bottlenecks that limit growth and profitability.
-</p>
 
 <div class="grid">
 
 <div class="card">
-<h3>Manual Quotations</h3>
-<p>Slow response times result in lost opportunities and reduced customer conversion.</p>
+
+<div class="phase">Phase 01</div>
+
+<h3>Digital Transformation</h3>
+
+<div class="price">
+12,500 SAR
+</div>
+
+<div class="percent">
+50% of Project
+</div>
+
+<ul class="features">
+<li>✓ Digital Presence</li>
+<li>✓ Instant Quotation Engine</li>
+<li>✓ Smart OCR Processing</li>
+<li>✓ AI Translation Preview</li>
+</ul>
+
 </div>
 
 <div class="card">
-<h3>Operational Bottlenecks</h3>
-<p>Repetitive manual processes increase costs and reduce scalability.</p>
+
+<div class="phase">Phase 02</div>
+
+<h3>Business Automation</h3>
+
+<div class="price">
+7,500 SAR
+</div>
+
+<div class="percent">
+30% of Project
+</div>
+
+<ul class="features">
+<li>✓ Customer Portal</li>
+<li>✓ Order Management</li>
+<li>✓ CRM Integration</li>
+<li>✓ Automated Communication</li>
+</ul>
+
 </div>
 
 <div class="card">
-<h3>Customer Experience Gap</h3>
-<p>Customers expect instant pricing, tracking, and digital interactions.</p>
+
+<div class="phase">Phase 03</div>
+
+<h3>AI Competitive Advantage</h3>
+
+<div class="price">
+5,000 SAR
 </div>
 
+<div class="percent">
+20% of Project
 </div>
 
-</section>
-
-<section>
-
-<h2 class="section-title">
-Phase 1 — Digital Transformation
-</h2>
-
-<div class="phase">
-
-<h2>Smart Website + AI Quote Engine</h2>
-
-<ul>
-<li>Modern bilingual website</li>
-<li>Lead generation system</li>
-<li>Instant quotation engine</li>
-<li>Automatic pricing calculation</li>
-<li>Turnaround estimation</li>
-<li>OCR document processing</li>
-<li>PDF & image extraction</li>
-<li>AI translation preview</li>
-<li>Quality showcase before purchase</li>
+<ul class="features">
+<li>✓ AI Assistant</li>
+<li>✓ AI Quality Assurance</li>
+<li>✓ AI Business Intelligence</li>
+<li>✓ AI Recommendations Engine</li>
 </ul>
 
 </div>
 
-</section>
+</div>
 
-<section>
+<div class="total">
 
-<h2 class="section-title">
-Phase 2 — Business Automation
+<h2>
+Total Investment: 25,000 SAR
 </h2>
 
-<div class="phase">
+<p>
+Delivered through 3 structured phases to ensure measurable business impact and scalable growth.
+</p>
 
-<h2>Operational Excellence</h2>
+</div>
 
-<ul>
-<li>Client portal dashboard</li>
-<li>Document management</li>
-<li>Order history</li>
-<li>Real-time order tracking</li>
-<li>CRM integration</li>
-<li>Email automation</li>
-<li>WhatsApp automation</li>
-<li>Customer lifecycle management</li>
-</ul>
+<div class="payment">
+
+<div class="payment-card">
+<h4>Project Kickoff</h4>
+<span>50%</span>
+<p>12,500 SAR</p>
+</div>
+
+<div class="payment-card">
+<h4>Phase 1 Delivery</h4>
+<span>30%</span>
+<p>7,500 SAR</p>
+</div>
+
+<div class="payment-card">
+<h4>Final Launch</h4>
+<span>20%</span>
+<p>5,000 SAR</p>
+</div>
 
 </div>
 
 </section>
 
-<section>
+<section class="footer">
 
-<h2 class="section-title">
-Phase 3 — AI Competitive Advantage
-</h2>
-
-<div class="phase">
-
-<h2>Artificial Intelligence Layer</h2>
-
-<ul>
-<li>AI customer assistant</li>
-<li>AI quality verification</li>
-<li>AI recommendations engine</li>
-<li>AI analytics dashboard</li>
-<li>Business intelligence reporting</li>
-<li>Customer behavior insights</li>
-<li>Upselling opportunities</li>
-</ul>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">
+<h2>
 Expected Business Impact
 </h2>
 
-<div class="stats">
-
-<div class="stat">
-<h3>70%</h3>
-<p>Faster Operations</p>
-</div>
-
-<div class="stat">
-<h3>3X</h3>
-<p>Lead Conversion</p>
-</div>
-
-<div class="stat">
-<h3>24/7</h3>
-<p>AI Availability</p>
-</div>
-
-<div class="stat">
-<h3>40%</h3>
-<p>Operational Savings</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">
-Implementation Timeline
-</h2>
-
-<div class="timeline">
-
-<div>
-<h3>Week 1</h3>
-<p>Discovery & Planning</p>
-</div>
-
-<div>
-<h3>Week 2</h3>
-<p>UI/UX Design</p>
-</div>
-
-<div>
-<h3>Week 3-6</h3>
-<p>Development</p>
-</div>
-
-<div>
-<h3>Week 7</h3>
-<p>Testing & Launch</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="price">
-
-<p>Project Investment</p>
-
-<h2>25,000 SAR</h2>
-
 <p>
-Complete AI-Powered Translation Platform
+Higher conversion rates through instant quotations,
+reduced manual effort using OCR and automation,
+improved customer experience through self-service tools,
+and a unique AI-driven positioning that differentiates the company from traditional translation offices in Saudi Arabia.
 </p>
 
 </section>
-
-<footer>
-
-<h2>
-The Future of Translation Services
-</h2>
-
-<p style="max-width:900px;margin:auto;color:#bfbfbf;font-size:20px;line-height:1.8;">
-Transforming a traditional translation office into a scalable, intelligent, AI-powered digital platform built for growth, efficiency, and customer satisfaction.
-</p>
-
-</footer>
 
 </body>
 </html>
